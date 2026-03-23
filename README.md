@@ -2,21 +2,18 @@
 
 ## Como rodar
 
-```bash
-python app.py
-```
+Primeiro, é necessário ter os requests:
+" pip install requests "
 
-Ou, para já enviar a correção:
+Após isso criar a conta:
+" python app.py --signup --email "SEU_EMAIL" --password "SUA_SENHA" --nome "Seu Nome Completo" "
 
-```bash
-python app.py --email "SEU_EMAIL" --password "SUA_SENHA"
-```
+Confirmar o email e, após a confirmação, enviar:
+" python app.py --email "SEU_EMAIL" --password "SUA_SENHA" "
 
 Também é possível passar um token já obtido:
 
-```bash
-python app.py --access-token "SEU_ACCESS_TOKEN"
-```
+" python app.py --access-token "SEU_ACCESS_TOKEN" "
 
 ## Arquivos
 
@@ -25,9 +22,3 @@ python app.py --access-token "SEU_ACCESS_TOKEN"
 - `stats.json`: estatísticas no formato pedido
 - `app.py`: solução completa
 - `notas_explicativas.md`: decisões técnicas
-
-## Requisitos
-
-```bash
-pip install requests
-```
